@@ -1,22 +1,4 @@
 import pytest
-
-from app.user import User
-
-
-@pytest.fixture
-def user():
-    return User('Vadim', 'Sedlyar', 36)
-
-
-@pytest.fixture
-def user_factory():
-    def create_user(name='', surname='', age=0):
-        return User(name, surname, age)
-
-    return create_user
-
-
-import pytest
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
