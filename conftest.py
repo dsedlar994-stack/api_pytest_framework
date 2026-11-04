@@ -39,4 +39,4 @@ def auth_token(api_client):
         # Защита от JSONDecodeError: возвращаем безопасный мок-токен для гитхаба
         token = 'MOCK_TOKEN'
 
-    return 'MOCK_TOKEN'
+    return token
