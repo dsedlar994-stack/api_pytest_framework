@@ -12,8 +12,8 @@ def test_authorization_success(api_client):
     }
     payload = {
         'grant_type': 'password',
-        'username': '+7 (981) 855-40-13',
-        'password': 'Qwerty1z'
+        'username': 'MOCK_USER',
+        'password': 'MOCK_PASSWORD'
     }
 
     response = api_client.post(url, data=payload, headers=headers)
